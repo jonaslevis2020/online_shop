@@ -1,4 +1,5 @@
 {% extends 'base.html' %}
+{% load static %}
 {% block title %}Place order{% endblock title %}
 {% block content %}
     <section class="section-content padding-y bg">
@@ -13,7 +14,7 @@
                   <div class="col-md-6">
                     <figure class="itemside mb-4">
                       <div class="aside">
-                        <img src="./images/items/1.jpg" class="border img-sm" />
+                        <img src="{% static 'images/items/1.jpg' %}" class="border img-sm" />
                       </div>
                       <figcaption class="info">
                         <p>Apple iPad (2019) 32Gb Wi-Fi gold</p>
@@ -25,7 +26,7 @@
                   <div class="col-md-6">
                     <figure class="itemside mb-4">
                       <div class="aside">
-                        <img src="./images/items/2.jpg" class="border img-sm" />
+                        <img src="{% static 'images/items/2.jpg' %}" class="border img-sm" />
                       </div>
                       <figcaption class="info">
                         <p>Apple iPad (2019) 32Gb Wi-Fi gold</p>
@@ -37,7 +38,7 @@
                   <div class="col-md-6">
                     <figure class="itemside mb-4">
                       <div class="aside">
-                        <img src="./images/items/3.jpg" class="border img-sm" />
+                        <img src="{% static 'images/items/3.jpg' %}" class="border img-sm" />
                       </div>
                       <figcaption class="info">
                         <p>Apple iPad (2019) 32Gb Wi-Fi gold</p>
@@ -49,7 +50,7 @@
                   <div class="col-md-6">
                     <figure class="itemside mb-4">
                       <div class="aside">
-                        <img src="./images/items/4.jpg" class="border img-sm" />
+                        <img src="{% static 'images/items/4.jpg' %}" class="border img-sm" />
                       </div>
                       <figcaption class="info">
                         <p>Apple iPad (2019) 32Gb Wi-Fi gold</p>
@@ -168,7 +169,7 @@
               <div class="card">
                 <header class="card-header">
                   <img
-                    src="./images/misc/payment-paypal.png"
+                    src="{% static 'images/misc/payment-paypal.png' %}"
                     class="float-right"
                     height="24"
                   />
@@ -200,7 +201,7 @@
                     </p>
                     <p class="text-center">
                       <a href="#"
-                        ><img src="./images/misc/btn-paypal.png" height="32"
+                        ><img src="{% static 'images/misc/btn-paypal.png' %}" height="32"
                       /></a>
                       <br /><br />
                     </p>
@@ -213,7 +214,7 @@
               <div class="card">
                 <header class="card-header">
                   <img
-                    src="./images/misc/payment-card.png"
+                    src="{% static 'images/misc/payment-card.png' %}"
                     class="float-right"
                     height="24"
                   />
@@ -293,7 +294,7 @@
                 </dl>
                 <hr />
                 <p class="text-center mb-3">
-                  <img src="./images/misc/payments.png" height="26" />
+                  <img src="{% static 'images/misc/payments.png' %}" height="26" />
                 </p>
                 <a href="./place-order.html" class="btn btn-primary btn-block">
                   Place Order
